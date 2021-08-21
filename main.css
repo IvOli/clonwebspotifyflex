@@ -1,0 +1,212 @@
+:root{
+    --green: rgb(4,180,116);
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 28px;
+}
+
+
+/*Es la parte del header, contiene el logo y la barra de navegacion*/
+header {
+    margin: 0px;
+    display: flex;
+}
+.logo {
+    width: 55vw;
+}
+
+.logo > img{
+    width: 300px;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+ul{
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li{
+    font-size: 30px
+}
+/*Esta es la parte principal que contiene el H1 y el h2*/
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    height: 770px;
+    background-image:  url("img/landing.jpg");
+    background-size: cover;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 120px;
+}
+h2{
+    font-size: 40px;
+}
+
+/*El H3*/
+
+h3 {
+    padding: 30px;
+    text-align: center;
+    text-decoration: underline var(--green) ;
+    font-size: 40px;
+}
+
+/*La parte central, contiene 3 elemenentos*/
+.central{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+.central > div{
+    width: 480px;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.central > div > img{
+    width: 190px;
+    height: 150px;
+    align-self: center;
+}
+
+.central > div > h4 {
+    color: var(--green);
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+.central > div > p {
+    text-align: center;
+    font-size: 32px;
+}
+/*Parte inferior*/
+
+.inferior {
+    background-color: var(--green);
+    display: flex;
+    height: 850px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    width: 40vw;
+    color: white;
+}
+.texto > h5{
+    text-decoration: underline ;
+    font-size: 40px;
+    font-weight: normal;
+}
+.texto > h6 {
+    margin-top: 30px;
+    font-size: 36px;
+}
+.texto > p {
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+
+.imagenes {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fig {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.kanye {
+    align-self: center;
+    width: 400px;
+}
+
+@media (max-width: 640px) {
+    
+    .logo > img{
+        width: 200px;
+    }.principal{
+        height: 450px;
+    }
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        font-size: 20px
+    }
+    h3{
+        padding: 20px 0 0 0;
+    }
+    .central{
+        height: 800px;
+        flex-direction: column;
+    }
+    .central > div > img{
+        width: 160px;
+        height: 120px;
+    }
+    .central > div > h4 {
+        font-size: 30px;
+    }
+    
+    .central > div > p {
+        font-size: 25px;
+    }
+    .inferior {
+        flex-direction: column;
+        height: 1200px;
+    }
+    .imagenes {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+    .texto {
+        width: 80vw;
+    }
+    .texto > h5{
+        font-size: 30px;
+    }
+    .texto > h6 {
+        font-size: 25px;
+    }
+    .texto > p {
+        font-size: 25px;
+    }
+    .fig {
+        margin: 20px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .kanye {
+        margin: 20px;
+        width: 300px;
+    }
+}
